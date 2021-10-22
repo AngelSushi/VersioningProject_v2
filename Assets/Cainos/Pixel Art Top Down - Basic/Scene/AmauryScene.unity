@@ -5260,7 +5260,8 @@ GameObject:
   - component: {fileID: 307034831}
   - component: {fileID: 307034832}
   - component: {fileID: 307034833}
-  - component: {fileID: 307034834}
+  - component: {fileID: 307034835}
+  - component: {fileID: 307034836}
   m_Layer: 20
   m_Name: PF Props Crate
   m_TagString: Untagged
@@ -5361,27 +5362,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9409628, y: 0.7174847}
   m_EdgeRadius: 0
---- !u!50 &307034834
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &307034835
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307034830}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 10
-  m_LinearDrag: 10
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1.4375}
+    newSize: {x: 1, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
+--- !u!114 &307034836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307034830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95380d8788396454087bb606c4fb914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chestOpen: {fileID: 0}
+  useStatus: {fileID: 0}
 --- !u!1 &339071704
 GameObject:
   m_ObjectHideFlags: 0
@@ -30996,7 +31017,8 @@ GameObject:
   - component: {fileID: 1937166902}
   - component: {fileID: 1937166903}
   - component: {fileID: 1937166905}
-  - component: {fileID: 1937166904}
+  - component: {fileID: 1937166906}
+  - component: {fileID: 1937166907}
   m_Layer: 20
   m_Name: PF Props Crate Small
   m_TagString: Untagged
@@ -31071,27 +31093,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!50 &1937166904
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937166901}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 5
-  m_LinearDrag: 10
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &1937166905
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31118,6 +31119,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7475858, y: 0.5954263}
   m_EdgeRadius: 0
+--- !u!61 &1937166906
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937166901}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.8125, y: 1.21875}
+    newSize: {x: 0.8125, y: 1.21875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
+--- !u!114 &1937166907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937166901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95380d8788396454087bb606c4fb914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chestOpen: {fileID: 0}
+  useStatus: {fileID: 0}
 --- !u!1001 &1941660996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32875,7 +32917,8 @@ GameObject:
   - component: {fileID: 822293562625323052}
   - component: {fileID: 822293562625323051}
   - component: {fileID: 5056481289301513830}
-  - component: {fileID: 1713729683118169190}
+  - component: {fileID: 822293562625323053}
+  - component: {fileID: 822293562625323054}
   m_Layer: 20
   m_Name: PF Props Barrel
   m_TagString: Untagged
@@ -32950,6 +32993,47 @@ Transform:
   m_Father: {fileID: 1177272032}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &822293562625323053
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822293562625323050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.875, y: 1.125}
+    newSize: {x: 1, y: 0.96875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
+--- !u!114 &822293562625323054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822293562625323050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95380d8788396454087bb606c4fb914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chestOpen: {fileID: 0}
+  useStatus: {fileID: 0}
 --- !u!1 &822293562712557793
 GameObject:
   m_ObjectHideFlags: 0
@@ -33177,27 +33261,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 403080d7568a4f949b4bfc7128477a8c, type: 3}
---- !u!50 &1713729683118169190
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822293562625323050}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 10
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!1 &2055102311766676706
 GameObject:
   m_ObjectHideFlags: 0
@@ -35734,8 +35797,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2577585253983375616}
   - component: {fileID: 2577585253983375647}
-  - component: {fileID: 2577585253983375645}
   - component: {fileID: 9140004028828425636}
+  - component: {fileID: 2577585253983375618}
+  - component: {fileID: 2577585253983375619}
   m_Layer: 20
   m_Name: PF Props Pot B (1)
   m_TagString: Untagged
@@ -35743,27 +35807,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!50 &2577585253983375645
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &2577585253983375618
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2577585253983375617}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 10
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 1, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
+--- !u!114 &2577585253983375619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577585253983375617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95380d8788396454087bb606c4fb914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chestOpen: {fileID: 0}
+  useStatus: {fileID: 0}
 --- !u!212 &2577585253983375647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36148,27 +36232,6 @@ Transform:
   m_Father: {fileID: 2577585254551057809}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &2577585254206362085
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2577585254206362105}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 10
-  m_LinearDrag: 10
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &2577585254206362086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36273,7 +36336,8 @@ GameObject:
   - component: {fileID: 2577585254206362104}
   - component: {fileID: 2577585254206362087}
   - component: {fileID: 2577585254206362086}
-  - component: {fileID: 2577585254206362085}
+  - component: {fileID: 2577585254206362106}
+  - component: {fileID: 2577585254206362107}
   m_Layer: 20
   m_Name: PF Props Crate (2)
   m_TagString: Untagged
@@ -36281,6 +36345,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &2577585254206362106
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577585254206362105}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1.4375}
+    newSize: {x: 1, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
+--- !u!114 &2577585254206362107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577585254206362105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95380d8788396454087bb606c4fb914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chestOpen: {fileID: 0}
+  useStatus: {fileID: 0}
 --- !u!212 &2577585254497290681
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36449,6 +36554,8 @@ GameObject:
   - component: {fileID: 2577585254551057806}
   - component: {fileID: 2577585254551057804}
   - component: {fileID: 9140004029329258805}
+  - component: {fileID: 2577585254551057810}
+  - component: {fileID: 2577585254551057811}
   m_Layer: 20
   m_Name: PF Props Pot C (1)
   m_TagString: Untagged
@@ -36471,27 +36578,47 @@ Transform:
   m_Father: {fileID: 1177272032}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &2577585254580862337
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &2577585254551057810
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2577585254580862365}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 10
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GameObject: {fileID: 2577585254551057808}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.65625, y: 1}
+    newSize: {x: 1, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
+--- !u!114 &2577585254551057811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577585254551057808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95380d8788396454087bb606c4fb914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chestOpen: {fileID: 0}
+  useStatus: {fileID: 0}
 --- !u!212 &2577585254580862339
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36569,8 +36696,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2577585254580862364}
   - component: {fileID: 2577585254580862339}
-  - component: {fileID: 2577585254580862337}
   - component: {fileID: 9140004029291589944}
+  - component: {fileID: 2577585254580862366}
+  - component: {fileID: 2577585254580862367}
   m_Layer: 20
   m_Name: PF Props Pot A (1)
   m_TagString: Untagged
@@ -36578,6 +36706,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &2577585254580862366
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577585254580862365}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.65625, y: 1.0625}
+    newSize: {x: 1, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
+--- !u!114 &2577585254580862367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577585254580862365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95380d8788396454087bb606c4fb914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chestOpen: {fileID: 0}
+  useStatus: {fileID: 0}
 --- !u!4 &2577585254588217802
 Transform:
   m_ObjectHideFlags: 0
@@ -36822,6 +36991,7 @@ GameObject:
   - component: {fileID: 2577585254632518702}
   - component: {fileID: 2577585254632518703}
   - component: {fileID: 2577585254632518700}
+  - component: {fileID: 2577585254632518706}
   m_Layer: 20
   m_Name: PF Props Crate (1)
   m_TagString: Untagged
@@ -36844,6 +37014,32 @@ Transform:
   m_Father: {fileID: 1177272032}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2577585254632518706
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2577585254632518704}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1.4375}
+    newSize: {x: 1, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
 --- !u!212 &2577585254725257537
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37035,8 +37231,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2790690775415845352}
   - component: {fileID: 2790690775415845367}
-  - component: {fileID: 2790690775415845365}
   - component: {fileID: 8910437170894683468}
+  - component: {fileID: 2790690775415845354}
+  - component: {fileID: 2790690775415845355}
   m_Layer: 20
   m_Name: PF Props Pot C
   m_TagString: Untagged
@@ -37044,27 +37241,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!50 &2790690775415845365
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &2790690775415845354
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2790690775415845353}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 10
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.65625, y: 1}
+    newSize: {x: 1, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
+--- !u!114 &2790690775415845355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2790690775415845353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95380d8788396454087bb606c4fb914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chestOpen: {fileID: 0}
+  useStatus: {fileID: 0}
 --- !u!212 &2790690775415845367
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38152,8 +38369,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4498218753054231814}
   - component: {fileID: 4498218753054231833}
-  - component: {fileID: 4498218753054231835}
   - component: {fileID: 7169272124783165858}
+  - component: {fileID: 4498218753054231816}
+  - component: {fileID: 4498218753054231817}
   m_Layer: 20
   m_Name: PF Props Pot B
   m_TagString: Untagged
@@ -38161,6 +38379,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &4498218753054231816
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4498218753054231815}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 1, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
+--- !u!114 &4498218753054231817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4498218753054231815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95380d8788396454087bb606c4fb914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chestOpen: {fileID: 0}
+  useStatus: {fileID: 0}
 --- !u!212 &4498218753054231833
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38213,27 +38472,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!50 &4498218753054231835
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4498218753054231815}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 10
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!4 &4498218753797231940
 Transform:
   m_ObjectHideFlags: 0
@@ -41731,8 +41969,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7471788085041990087}
   - component: {fileID: 7471788085041990104}
-  - component: {fileID: 7471788085041990106}
   - component: {fileID: 4225399760052241763}
+  - component: {fileID: 7471788085041990088}
+  - component: {fileID: 7471788085041990089}
   m_Layer: 20
   m_Name: PF Props Pot A
   m_TagString: Untagged
@@ -41755,6 +41994,47 @@ Transform:
   m_Father: {fileID: 1177272032}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &7471788085041990088
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7471788085041990086}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.65625, y: 1.0625}
+    newSize: {x: 1, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
+--- !u!114 &7471788085041990089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7471788085041990086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95380d8788396454087bb606c4fb914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chestOpen: {fileID: 0}
+  useStatus: {fileID: 0}
 --- !u!212 &7471788085041990104
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41807,27 +42087,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!50 &7471788085041990106
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7471788085041990086}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 10
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!1 &7471788085650739588
 GameObject:
   m_ObjectHideFlags: 0
@@ -45084,27 +45343,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7475858, y: 0.5954263}
   m_EdgeRadius: 0
---- !u!50 &8150476868253992151
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8150476868253992154}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 5
-  m_LinearDrag: 10
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!212 &8150476868253992152
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45183,7 +45421,8 @@ GameObject:
   - component: {fileID: 8150476868253992153}
   - component: {fileID: 8150476868253992152}
   - component: {fileID: 8150476868253992150}
-  - component: {fileID: 8150476868253992151}
+  - component: {fileID: 8150476868253992155}
+  - component: {fileID: 8150476868253992156}
   m_Layer: 20
   m_Name: PF Props Crate Small (1)
   m_TagString: Untagged
@@ -45191,6 +45430,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &8150476868253992155
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8150476868253992154}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.008900642, y: 0.5998347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.8125, y: 1.21875}
+    newSize: {x: 0.8125, y: 1.21875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.395791, y: 1.6182218}
+  m_EdgeRadius: 0
+--- !u!114 &8150476868253992156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8150476868253992154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95380d8788396454087bb606c4fb914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  chestOpen: {fileID: 0}
+  useStatus: {fileID: 0}
 --- !u!212 &8150476868623538613
 SpriteRenderer:
   m_ObjectHideFlags: 0
