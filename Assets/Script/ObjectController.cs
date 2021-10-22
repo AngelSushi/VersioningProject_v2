@@ -6,6 +6,7 @@ public class ObjectController : CoroutineSystem {
     public enum ObjectType {
         OBJECT,
         CHEST,
+        DOOR,
     }
 
     public ObjectType type;
@@ -13,6 +14,7 @@ public class ObjectController : CoroutineSystem {
 
     public Sprite useStatus; 
     private bool collideObj;
+    private GameObject hitObj;
     void Start() { }
 
     void Update() { 
@@ -20,22 +22,27 @@ public class ObjectController : CoroutineSystem {
         if(collideObj) {
             if(Input.GetKeyDown(KeyCode.E)) {
                 collideObj = false;
-                
-                if(type == ObjectType.CHEST) {
-                    chestOpen.Play();
-                    RunDelayed(8f,() =>  {
-                        transform.GetComponent<SpriteRenderer>().sprite = useStatus;
-                    });
+                if(transform.GetComponent<SpriteRenderer>().sprite != useStatus) {
+                    transform.GetComponent<SpriteRenderer>().sprite = useStatus;
+                    if(type == ObjectType.CHEST) {
+                        chestOpen.Play();
+                        hitObj.GetComponent<Cainos.PixelArtTopDown_Basic.TopDownCharacterController>().freeze = true;
+                        RunDelayed(8f,() =>  {
+                            hitObj.GetComponent<Cainos.PixelArtTopDown_Basic.TopDownCharacterController>().freeze = false;
+                        });
+                    }
                 }
+                
             }
         }
 
     }
 
     private void OnTriggerStay2D(Collider2D hit) {
-        if(hit.gameObject.tag == "Player") 
+        if(hit.gameObject.tag == "Player") {
             collideObj = true;
-        
+            hitObj = hit.gameObject;
+        }        
     }
 
     private void OnTriggerExit2D(Collider2D hit) {
