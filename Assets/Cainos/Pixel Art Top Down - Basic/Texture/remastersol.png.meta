@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9acbe2b7a7a2d5440926fcb41474a2b3
 TextureImporter:
   internalIDToNameTable:
@@ -194,6 +195,11 @@ TextureImporter:
   - first:
       213: -1454159040326336325
     second: remastersol_63
+=======
+guid: 5d86c99a497dbd04f90b4012971e93fd
+TextureImporter:
+  internalIDToNameTable: []
+>>>>>>> main
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -224,7 +230,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: 1
+>>>>>>> main
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -233,12 +243,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> main
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 32
+=======
+  spritePixelsToUnits: 100
+>>>>>>> main
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -267,6 +285,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -1626,6 +1645,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+>>>>>>> main
     outline: []
     physicsShape: []
     bones: []
