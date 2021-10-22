@@ -2,16 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Cainos.PixelArtTopDown_Basic
-{
+
     public class TopDownCharacterController : MonoBehaviour
     {
+
+        public static TopDownCharacterController instance;
+
+        public int currentHealth;
+        public int maxHealth = 3;
+
+
+    public GameObject objectToDestroy;
+
         public float speed;
 
         private Animator animator;
 
+        private void Awake()
+        {
+            instance = this;
+        }
+
         private void Start()
         {
+            currentHealth = maxHealth;
             animator = GetComponent<Animator>();
         }
 
@@ -46,5 +60,23 @@ namespace Cainos.PixelArtTopDown_Basic
 
             GetComponent<Rigidbody2D>().velocity = speed * dir;
         }
+
+    public void TakeDamage(int damage)
+    {
+   
+        if (currentHealth >= 0)
+        {
+            currentHealth -= damage;
+        }
+        
     }
-}
+
+    public void die()
+    {
+        if (currentHealth <= 0)
+        {
+            Destroy(objectToDestroy);
+        }
+    }
+ }
+
