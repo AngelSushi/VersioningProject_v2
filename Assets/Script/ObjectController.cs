@@ -34,9 +34,9 @@ public class ObjectController : CoroutineSystem {
                         case ObjectType.CHEST: 
                             transform.GetComponent<SpriteRenderer>().sprite = useStatus;
                             chestOpen.Play();
-                            hitObj.GetComponent<Cainos.PixelArtTopDown_Basic.TopDownCharacterController>().freeze = true;
+                            hitObj.GetComponent<TopDownCharacterController>().freeze = true;
                             RunDelayed(8f,() =>  {
-                                hitObj.GetComponent<Cainos.PixelArtTopDown_Basic.TopDownCharacterController>().freeze = false;
+                                hitObj.GetComponent<TopDownCharacterController>().freeze = false;
                             });
                             break;
                         
